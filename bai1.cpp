@@ -1,19 +1,20 @@
 #include<stdio.h>
 int main(){
 	int n;
-	printf("nhap vao kich thuoc mang: \n");
+	printf("so phan tu cua day so: ");
 	scanf("%d",&n);
 	int arr[n];
 	for(int i=0;i<n;i++){
 		printf("nhap vao so thu %d:\n",i);
 		scanf("%d",&arr[i]);
-	}
-	int schan=0;
+	    }
+	int sochan=0;
 	for(int i=0;i<n;i++){
 		if(arr[i]%2==0)
-		schan=arr[i];
-		
-	}
-	if(schan==0)printf("khong co so chan nao trong day");
-	else printf("so chan cuoi cung trong day la:%d",schan);
+		sochan=arr[i];
+		}
+	if(sochan==0){
+	    printf("khong co so chan nao trong day");
+	}else 
+	    printf("so chan cuoi cung la:%d",sochan);
 }
